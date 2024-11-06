@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
+<<<<<<< HEAD
           image: name/auth
           env:
             - name: JWT_KEY
@@ -21,6 +22,9 @@ spec:
                 secretKeyRef:
                   name: jwt-secret
                   key: JWT_KEY
+=======
+          image: 00halfman00/auth
+>>>>>>> parent of 883906b (morning)
 ---
 apiVersion: v1
 kind: Service
